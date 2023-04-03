@@ -18,5 +18,18 @@ struct Mahasiswa
 int main() {
 	Mahasiswa mhs[3];
 
-	
+	for (int i = 0; i < 3; i++) {
+		cout << "masukan NIM :";
+		cin >> mhs[i].NIM;
+		cout << "masukan Nama :";
+		cin >> mhs[i].nama;
+		cout << "masukan Alamat :";
+		cout << "\n\tMasukan desa :";
+		cin >> mhs[i].alamat.desa;
+		cout << "\n\tMasukan kota :";
+		cin >> mhs[i].alamat.kota;
+		cout << "masukan umur :";
+		cin >> mhs[i].umur;
+
+	}
 }

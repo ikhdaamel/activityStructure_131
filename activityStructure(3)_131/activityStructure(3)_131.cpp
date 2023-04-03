@@ -20,16 +20,16 @@ int main() {
 
 	for (int i = 0; i < 3; i++) {
 		cout << "masukan NIM :";
-		cin >> mhs[i].NIM;
+		cin.getline(mhs[i].NIM,12);
 		cout << "masukan Nama :";
-		cin >> mhs[i].nama;
+		cin.getline(mhs[i].nama, 25);
 		cout << "masukan Alamat :";
 		cout << "\n\tMasukan desa :";
-		cin >> mhs[i].alamat.desa;
+		cin.getline(mhs[i].alamat.desa,20);
 		cout << "\n\tMasukan kota :";
-		cin >> mhs[i].alamat.kota;
+		cin.getline(mhs[i].alamat.kota,20);
 		cout << "masukan umur :";
 		cin >> mhs[i].umur;
-
+		cin.ignore(1, '\n');
 	}
 }
